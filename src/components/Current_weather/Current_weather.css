@@ -62,3 +62,8 @@ span.parameter_label {
     font-weight: 600;
     font-size: 12px;
 }
+
+.det_top {
+    border-bottom: 1px solid #fff;
+    margin-bottom: 2px;
+}
