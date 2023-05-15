@@ -15,7 +15,7 @@ const Forecast = ({data}) => {
 
     return (
         <>
-            <label className='d_title'>Daily</label>
+            <label className='d_title'>Daily - Next 7 days </label>
             <Accordion allowZeroExpanded>
                 {data.list.splice(0, 7).map((item, idx) => (
                    
@@ -25,9 +25,9 @@ const Forecast = ({data}) => {
                             <AccordionItemButton>
                                 <div className='daily_item'>
                                     <img src={`icons/${item.weather[0].icon}.png`} alt='weather' className='icon_small'></img>
-                                    <label className='day'>{forcastDays[idx]}</label>
+                                    <label className='day'> {forcastDays[idx]} </label>
                                     <label className='description'> {item.weather[0].description} </label>
-                                    <label className='min_max'> {Math.round(item.main.temp_min)}°C / {Math.round(item.main.temp_max)}°C</label>
+                                    <label className='min_max'> {Math.round(item.main.temp_min)}°C / {Math.round(item.main.temp_max)}°C </label>
                                 </div>
                             </AccordionItemButton>
                         </AccordionItemHeading>
