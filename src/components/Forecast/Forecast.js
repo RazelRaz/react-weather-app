@@ -31,7 +31,34 @@ const Forecast = ({data}) => {
                                 </div>
                             </AccordionItemButton>
                         </AccordionItemHeading>
-                        <AccordionItemPanel></AccordionItemPanel>
+                        <AccordionItemPanel>
+                            <div className='daily_details_grid'>
+                                <div className='daily_details_grid_item'>
+                                    <label>Pressure</label>
+                                    <label> {item.main.pressure}hPa </label>
+                                </div>
+                                <div className='daily_details_grid_item'>
+                                    <label>Humidity</label>
+                                    <label> {item.main.humidity}% </label>
+                                </div>
+                                <div className='daily_details_grid_item'>
+                                    <label>Clouds</label>
+                                    <label> {item.clouds.all}% </label>
+                                </div>
+                                <div className='daily_details_grid_item'>
+                                    <label>Wind Speed</label>
+                                    <label> {item.wind.speed}m/s</label>
+                                </div>
+                                <div className='daily_details_grid_item'>
+                                    <label>Sea level</label>
+                                    <label> {item.main.sea_level}m </label>
+                                </div>
+                                <div className='daily_details_grid_item'>
+                                    <label>Feels Like</label>
+                                    <label> {Math.round(item.main.feels_like)}°C </label>
+                                </div>
+                            </div>
+                        </AccordionItemPanel>
                     </AccordionItem>
                 ))}
             </Accordion>

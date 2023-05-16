@@ -12,7 +12,7 @@ function App() {
 
   const handleOnSearchChange = (searchData) => {
 
-    console.log(searchData);
+    // console.log(searchData);
     const [lat, lon] = searchData.value.split(" ");
 
     const currentWeatherFetch = fetch(`${WEATHER_API_URL}/weather?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}&units=metric`);
@@ -30,8 +30,8 @@ function App() {
       .catch((err) => console.log(err));
   }
 
-  console.log(currentWeather);
-  console.log(forecast);
+  // console.log(currentWeather);
+  // console.log(forecast);
   
   
 

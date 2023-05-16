@@ -3,7 +3,9 @@ body {
   font-family: "Roboto", Arial !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #d5d4d4;
+  /* background-color: #d5d4d4; */
+  background-image: url(/public/images/weatherbg.jpg);
+  background-position: center center;
 }
 
 code {
